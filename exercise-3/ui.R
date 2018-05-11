@@ -6,7 +6,7 @@ library(ggplot2)
 select_values <- colnames(mpg)
 
 # Create a shinyUI with a `fluidPage` layout
-shinyUI(fluidPage(
+ui <- shinyUI(fluidPage(
   # A page header
   h1("MPG Dataset Exploration"), 
   

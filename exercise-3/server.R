@@ -6,7 +6,7 @@ library(ggplot2)
 
 # It should take as an input the x_var, y_var, color, and size
 # Save the result of `renderPlot` to output$scatter
-shinyServer(function(input, output) {
+server <- shinyServer(function(input, output) {
   output$scatter <- renderPlot({
     # Store x and y values to plot
     x <- mpg[[input$x_var]]
